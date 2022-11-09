@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import TodosList from './TodosList';
+import Header from './Header';
 
 class TodoContainer extends PureComponent {
   constructor(props) {
@@ -25,11 +26,26 @@ class TodoContainer extends PureComponent {
     };
   }
 
+  handleChange = (id) => {
+    this.setState((prevState) => ({
+      todos: prevState.todos.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            completed: !todo.completed,
+          };
+        }
+        return todo;
+      }),
+    }));
+  };
+
   render() {
     const { todos } = this.state;
     return (
       <div>
-        <TodosList todos={todos} />
+        <Header />
+        <TodosList todos={todos} handleChangeProps={this.handleChange} />
       </div>
     );
   }

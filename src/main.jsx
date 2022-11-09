@@ -5,7 +5,6 @@ import TodoContainer from './components/TodoContainer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <h1>To-Do Applet</h1>
     <TodoContainer />
   </React.StrictMode>,
 );
