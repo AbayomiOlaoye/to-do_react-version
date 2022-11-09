@@ -2,8 +2,17 @@ import React, { PureComponent } from 'react';
 
 class TodoItem extends PureComponent {
   render() {
-    const { todo } = this.props;
-    return <li>{todo.title}</li>;
+    const { todo, handleChangeProps } = this.props;
+    return (
+      <li>
+        <input
+          type="checkbox"
+          checked={todo.completed}
+          onChange={() => handleChangeProps(todo.id)}
+        />
+        {todo.title}
+      </li>
+    );
   }
 }
 
