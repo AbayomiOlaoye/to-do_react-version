@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# to-do_react-version
-This repository consolidates my knowledge of React, components, props, state, and hooks, by following a tutorial as provided by Microverse.
-=======
 ## To-Do Applet
 This repository consolidates my knowledge of React, components, props, state, and hooks, by following a tutorial as provided by Microverse.
 
@@ -45,6 +41,3 @@ Give a ⭐️ if you like this project!
   - Code Reviewers
 
  ## 📝 License
-
-This project is MIT licensed.
->>>>>>> 4f0a66f (Update README.md file)
